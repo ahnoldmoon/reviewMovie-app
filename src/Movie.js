@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 class Movie extends Component{
 
-    // static propTypes = {
-    //     title: PropTypes.string.isRequired,
-    //     image: PropTypes.string.isRequired
-    // }
+    static propTypes = {
+        title: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired
+    }
 
     render(){
         // console.log(this.props);
@@ -22,9 +22,9 @@ class Movie extends Component{
 
 class MoviePoster extends Component{
 
-    // static propTypes = {
-    //     image: PropTypes.string.isRequired
-    // }
+    static propTypes = {
+        image: PropTypes.string.isRequired
+    }
 
     render(){
         console.log(this.props);
