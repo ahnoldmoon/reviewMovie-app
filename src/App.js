@@ -45,6 +45,10 @@ class App extends Component {
           {
             title: "Star Wars",
             image: "https://i.ytimg.com/vi/ngElkyQ6Rhs/hqdefault.jpg",
+          },
+          {
+            title : "Trainspotting",
+            image : "https://secure.i.telegraph.co.uk/multimedia/archive/02809/TRAINSPOTTING_2809300b.jpg"
           }
         ]
       })
