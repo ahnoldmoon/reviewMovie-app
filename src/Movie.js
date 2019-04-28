@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+
 
 class Movie extends Component{
+
+    // static propTypes = {
+    //     title: PropTypes.string.isRequired,
+    //     image: PropTypes.string.isRequired
+    // }
+
     render(){
+        // console.log(this.props);
         return(
             <div>
-                <h1>This is a movie.</h1>
-                <MoviePoster />
+                <MoviePoster image={this.props.image} />
+                <h1>{this.props.title}</h1>
             </div>
         )
     }
 }
 
 class MoviePoster extends Component{
+
+    // static propTypes = {
+    //     image: PropTypes.string.isRequired
+    // }
+
     render(){
+        console.log(this.props);
         return(
-            <img src="https://i.pinimg.com/236x/70/91/19/709119861d5e6870f47d552d60365025--hangers-hunting.jpg" />
+            <img src={this.props.image} />
         )
     }
 }
