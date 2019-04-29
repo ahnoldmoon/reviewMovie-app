@@ -19,7 +19,7 @@ import Movie from './Movie';
 
 class App extends Component {
   state = {
-    greeting: "Hello!",
+    // greeting: "Hello!"
     
   }
   componentWillMount(){
@@ -27,32 +27,9 @@ class App extends Component {
   }
 
   componentDidMount(){
-    setTimeout(() => {
-      this.setState({
-        movies : [
-          {
-            title: "matrix",
-            image: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/The_Matrix_Poster.jpg/220px-The_Matrix_Poster.jpg",
-          },
-          {
-            title: "Full Metal Jacket",
-            image: "https://images-na.ssl-images-amazon.com/images/I/91A%2B9lmEcxL._SX342_.jpg",
-          },
-          {
-            title: "Oldboy",
-            image: "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Oldboykoreanposter.jpg/220px-Oldboykoreanposter.jpg",
-          },
-          {
-            title: "Star Wars",
-            image: "https://i.ytimg.com/vi/ngElkyQ6Rhs/hqdefault.jpg",
-          },
-          {
-            title : "Trainspotting",
-            image : "https://secure.i.telegraph.co.uk/multimedia/archive/02809/TRAINSPOTTING_2809300b.jpg"
-          }
-        ]
-      })
-    }, 3000)
+    fetch('https://yts.am/api/v2/list_movies.json?sort_by=rating')
+    .then(json => console.log(json))
+    .catch(err => console.log(err))
   }
 
   _renderMovies = () => {
@@ -71,10 +48,10 @@ class App extends Component {
         })} */}
         {/* {this.state.greeting} */}
         {/* {this.state.movies.map((movie,index) => { */}
-          {this.state.movies ? this._renderMovies() : 'Loading'}
+          {/* {this.state.movies ? this._renderMovies() : this.state.gretting} */}
+          {this.state.movies ? this._renderMovies() : 'loading'}
         {/* })} */}
       </div>
-      
     )
   }
 }
