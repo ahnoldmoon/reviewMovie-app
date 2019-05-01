@@ -5,28 +5,31 @@ import './Movie.css'
 function Movie({title, image, genres, synopsis}){
     return(
         <div className="Movie">
-            <MoviePoster image={image} />
+            <MoviePoster image={image} alt={title}/>
             <div className="Movie__Column">
             </div>
             <div className="Movie__Column">
                 <h1>{title}</h1>
-                <div className="Movie_Genres">
+                <div className="Movie__Genres">
                     {genres.map((genre, index) => <MovieGenre genre={genre} key={index} />)}
                 </div>
+                <p className="Movie__Synopsis">
+                    {synopsis}
+                </p>
             </div>
         </div>
     )
 }
 
-function MovieGenre({genre}){
+function MoviePoster({image, alt}){
     return (
-        <span className="Movie_Genre">{genre}</span>
+        <img src={image} alt={alt} title={alt} className="Movie__Poster" />
     )
 }
 
-function MoviePoster({image}){
+function MovieGenre({genre}){
     return (
-        <img src={image} alt="Movie Poster" />
+        <span className="Movie__Genre">{genre}</span>
     )
 }
 
@@ -42,7 +45,8 @@ MovieGenre.propTypes = {
 }
 
 MoviePoster.propTypes = {
-    image: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired
 }
 
 

@@ -38,7 +38,7 @@ class App extends Component {
     const movies = this.state.movies.map(movie => {
       console.log(movie)
       return <Movie 
-        title={movie.title} 
+        title={movie.title_english} 
         image={movie.medium_cover_image} 
         key={movie.id} 
         genres={movie.genres}
