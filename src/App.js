@@ -67,14 +67,7 @@ class App extends Component {
     // console.log('did render');
     return(
       <div className="App">
-        {/* {movies.map(movie => {
-	        return <Movie title={movie.title} image={movie.image} />
-        })} */}
-        {/* {this.state.greeting} */}
-        {/* {this.state.movies.map((movie,index) => { */}
-          {/* {this.state.movies ? this._renderMovies() : this.state.gretting} */}
           {this.state.movies ? this._renderMovies() : 'loading'}
-        {/* })} */}
       </div>
     )
   }
