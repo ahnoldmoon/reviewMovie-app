@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reviewMovie-app/static/css/main.ff275076.chunk.css",
+    "main.css": "/reviewMovie-app/static/css/main.92b3962a.chunk.css",
     "main.js": "/reviewMovie-app/static/js/main.2f0b2eae.chunk.js",
     "main.js.map": "/reviewMovie-app/static/js/main.2f0b2eae.chunk.js.map",
     "runtime~main.js": "/reviewMovie-app/static/js/runtime~main.5209be00.js",
@@ -8,8 +8,8 @@
     "static/js/2.8af17d14.chunk.js": "/reviewMovie-app/static/js/2.8af17d14.chunk.js",
     "static/js/2.8af17d14.chunk.js.map": "/reviewMovie-app/static/js/2.8af17d14.chunk.js.map",
     "index.html": "/reviewMovie-app/index.html",
-    "precache-manifest.1762d393cff731c0f5c7e61e9d497c58.js": "/reviewMovie-app/precache-manifest.1762d393cff731c0f5c7e61e9d497c58.js",
+    "precache-manifest.0a02ca99e02fa2b1bec9cdbe272c80e3.js": "/reviewMovie-app/precache-manifest.0a02ca99e02fa2b1bec9cdbe272c80e3.js",
     "service-worker.js": "/reviewMovie-app/service-worker.js",
-    "static/css/main.ff275076.chunk.css.map": "/reviewMovie-app/static/css/main.ff275076.chunk.css.map"
+    "static/css/main.92b3962a.chunk.css.map": "/reviewMovie-app/static/css/main.92b3962a.chunk.css.map"
   }
 }
